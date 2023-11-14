@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlueBins</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/fd1f3a42c4.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <i class="fa-solid fa-trash-can"></i>
+            <a href="index.html">
+                <div class="logo-text">BlueBins</div>
+            </a>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="products.html">Our Bins</a></li>
+            </ul>
+        </div>
+        <div class="account">
+            <a href="login.html">Login</a>
+            <a href="cart.html"><button class="cart-button"><i class="fa-solid fa-cart-shopping"></i>
+                    <div id="cart-amount" class="cart-amount">0</div>
+                </button></a>
+        </div>
+    </header>
+
+    <section>
+        <div class="hero">
+            <img src="img/team.png" alt="">
+            <h1>Low Cost Bin Hire in Auckland!</h1>
+            <h3>Reliable, great value and 100% Auckland owned</h3>
+            <div class="search">
+                <i class="fa-solid fa-location-dot"></i>
+                <form method="post" action="">
+                    <select name="suburb" id="suburb-list">
+                        <option>Choose your suburb first ...</option>
+                        <option value="1">Albany</option>
+                        <option value="54">Arch Hill</option>
+                        <option value="113">Arkles Bay</option>
+                        <option value="114">Army Bay</option>
+                        <option value="115">Auckland Airport</option>
+                        <option value="172">Auckland City CBD</option>
+                        <option value="55">Avondale</option>
+                        <option value="3">Bayswater</option>
+                        <option value="4">Beach Haven</option>
+                        <option value="5">Belmont</option>
+                        <option value="6">Birkdale</option>
+                        <option value="7">Birkenhead</option>
+                        <option value="56">Blockhouse Bay</option>
+                        <option value="8">Browns Bay</option>
+                        <option value="9">Campbells Bay</option>
+                        <option value="10">Castor Bay</option>
+                        <option value="11">Chatswood</option>
+                        <option value="116">Clendon</option>
+                        <option value="117">Clover Park</option>
+                        <option value="12">Coatesville</option>
+                        <option value="167">Cockle Bay</option>
+                        <option value="119">Dairy Flat</option>
+                        <option value="120">Danemora</option>
+                        <option value="13">Devonport</option>
+                        <option value="121">Donegal Park</option>
+                        <option value="122">East Tamaki</option>
+                        <option value="123">Eastern Beach</option>
+                        <option value="57">Eden Terrace</option>
+                        <option value="124">Edgewater</option>
+                        <option value="14">Ellerslie</option>
+                        <option value="58">Epsom</option>
+                        <option value="125">Farm Cove</option>
+                        <option value="126">Favona</option>
+                        <option value="127">Flat Bush</option>
+                        <option value="15">Forrest Hill</option>
+                        <option value="59">Freemans Bay</option>
+                        <option value="60">Glen Eden</option>
+                        <option value="128">Glen Innes</option>
+                        <option value="16">Glendene</option>
+                        <option value="17">Glendowie</option>
+                        <option value="18">Glenfield</option>
+                        <option value="61">Grafton</option>
+                        <option value="62">Green Bay</option>
+                        <option value="63">Greenhithe</option>
+                        <option value="64">Greenlane</option>
+                        <option value="65">Grey lynn</option>
+                        <option value="129">Gulf Harbour</option>
+                        <option value="130">Halfmoon Bay</option>
+                        <option value="131">Hatfields Beach</option>
+                        <option value="19">Hauraki</option>
+                        <option value="66">Henderson</option>
+                        <option value="67">Henderson Valley</option>
+                        <option value="68">Herald Island</option>
+                        <option value="69">Herne Bay</option>
+                        <option value="132">Highland Park</option>
+                        <option value="20">Hillcrest</option>
+                        <option value="70">Hillsborough</option>
+                        <option value="71">Hobsonville</option>
+                        <option value="133">Howick</option>
+                        <option value="21">Huapai</option>
+                        <option value="168">Huia</option>
+                        <option value="72">Kelston</option>
+                        <option value="73">Kingsland</option>
+                        <option value="22">Kohimaramara</option>
+                        <option value="23">Kumeu</option>
+                        <option value="165">Laingholm</option>
+                        <option value="74">Lincoln</option>
+                        <option value="134">Little Manly</option>
+                        <option value="135">Long Bay</option>
+                        <option value="75">Lynfield</option>
+                        <option value="24">Mairangi Bay</option>
+                        <option value="136">Mangere</option>
+                        <option value="25">Mangere Bridge</option>
+                        <option value="137">Mangere East</option>
+                        <option value="138">Mangere South</option>
+                        <option value="139">Manly</option>
+                        <option value="140">Manukau</option>
+                        <option value="141">Manukau City</option>
+                        <option value="142">Manurewa</option>
+                        <option value="76">Massey</option>
+                        <option value="143">Matakatia Bay</option>
+                        <option value="26">Meadowbank</option>
+                        <option value="144">Meadowood</option>
+                        <option value="27">Milford</option>
+                        <option value="28">Mission Bay</option>
+                        <option value="77">Mt Albert</option>
+                        <option value="78">Mt Eden</option>
+                        <option value="79">Mt Roskill</option>
+                        <option value="29">Mt Wellington</option>
+                        <option value="169">Muriwai</option>
+                        <option value="30">Murrays Bay</option>
+                        <option value="31">Narrow Neck</option>
+                        <option value="80">New Lynn</option>
+                        <option value="81">Newmarket</option>
+                        <option value="82">Northcote</option>
+                        <option value="32">Northcross</option>
+                        <option value="83">One Tree Hil</option>
+                        <option value="84">Onehunga</option>
+                        <option value="33">Orakei</option>
+                        <option value="34">Oratia</option>
+                        <option value="145">Ormiston</option>
+                        <option value="146">Otahuhu</option>
+                        <option value="147">Otara</option>
+                        <option value="170">Pakuranga</option>
+                        <option value="149">Panmure</option>
+                        <option value="150">Papatoetoe</option>
+                        <option value="151">Paremoremo</option>
+                        <option value="35">Parnell</option>
+                        <option value="36">Penrose</option>
+                        <option value="37">Pinehill</option>
+                        <option value="85">Point Chevalier</option>
+                        <option value="38">Point England</option>
+                        <option value="86">Ponsonby</option>
+                        <option value="87">Ranui</option>
+                        <option value="152">Red Beach</option>
+                        <option value="153">Redvale</option>
+                        <option value="88">Remuera</option>
+                        <option value="89">Riverhead</option>
+                        <option value="39">Rosedale</option>
+                        <option value="40">Rothesay Bay</option>
+                        <option value="90">Royal Heights</option>
+                        <option value="91">Royal Oak</option>
+                        <option value="92">Sandringham</option>
+                        <option value="154">Silverdale</option>
+                        <option value="171">St Heliers</option>
+                        <option value="42">St Johns</option>
+                        <option value="93">St Lukes</option>
+                        <option value="94">St Marys Bay</option>
+                        <option value="43">Stanley Point</option>
+                        <option value="44">Stanmore Bay</option>
+                        <option value="155">Stillwater</option>
+                        <option value="45">Sunnybrae</option>
+                        <option value="46">Sunnynook</option>
+                        <option value="95">Sunnyvale</option>
+                        <option value="47">Sunset North</option>
+                        <option value="96">Swanson</option>
+                        <option value="48">Takapuna</option>
+                        <option value="156">Tamaki</option>
+                        <option value="97">Te Atatu Peninsula</option>
+                        <option value="98">Te Atatu South</option>
+                        <option value="99">Three Kings</option>
+                        <option value="157">Tindalls Beach</option>
+                        <option value="100">Titirangi</option>
+                        <option value="101">Titirangi South</option>
+                        <option value="158">Torbay</option>
+                        <option value="159">Totara Vale</option>
+                        <option value="49">Unsworth Heights</option>
+                        <option value="160">Waiake</option>
+                        <option value="102">Waikowhai</option>
+                        <option value="103">Waima</option>
+                        <option value="104">Waimanu Bay</option>
+                        <option value="50">Wainoni Park</option>
+                        <option value="51">Wairau Valley</option>
+                        <option value="52">Waitarua</option>
+                        <option value="161">Waiwera</option>
+                        <option value="105">Waterview</option>
+                        <option value="106">Wesley</option>
+                        <option value="107">West Harbour</option>
+                        <option value="108">Western Heights</option>
+                        <option value="109">Western Springs</option>
+                        <option value="53">Westlake</option>
+                        <option value="110">Westmere</option>
+                        <option value="162">Weymouth</option>
+                        <option value="163">Whangaparaoa</option>
+                        <option value="111">Whenuapai</option>
+                        <option value="164">Wiri</option>
+                        <option value="112">Woodlands Park</option>
+                    </select>
+                </form>
+                <button class="button-two">Search</button>
+            </div>
+        </div>
+    </section>
+
+
+    <section>
+        <div class="title">
+            <h4>Our Services</h4>
+        </div>
+        <div class="services">
+            <div class="icons">
+                <i class="fa-solid fa-dumpster"></i>
+                <h4>General Rubbish</h4>
+            </div>
+            <div class="line"></div>
+            <div class="icons">
+                <i class="fa-solid fa-hammer"></i>
+                <h4>Hardfill Waste</h4>
+            </div>
+            <div class="line"></div>
+            <div class="icons">
+                <i class="fa-solid fa-tree"></i>
+                <h4>Garden Waste</h4>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="title">
+            <h4>Meet the Team</h4>
+        </div>
+        <div class="about-us">
+            <div class="image">
+                <img src="img/team.png" alt="">
+            </div>
+            <div class="text">
+                <h2>About Us</h2>
+                <p>Welcome to Blue Bins, your reliable choice for bin and mini skip hire in Auckland.</p>
+                <p>With over 12 years of experience, we're committed to providing courteous, efficient, and
+                    cost-effective services.</p>
+                <p>Join us in our commitment to efficient and eco-friendly waste management in Auckland</p>
+                <a href="about-us.html"><button class="button-one">See More</button></a>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="title">
+            <h4>Our Blue Bins</h4>
+        </div>
+        <div class="our-bins">
+            <div class="text">
+                <h2>Our Bins</h2>
+                <p>Our bin sizes range from 2m² to 9m² all viewable on our website, making it easy to choose the right
+                    size for your needs.</p>
+                <p>When you hire a bin from us you can expect a professional service from a bin company with over 12
+                    years of operating in and around Auckland.</p>
+                <a href="products.html"><button class="button-one">Shop All</button></a>
+            </div>
+            <div class="image">
+                <img src="img/bin-4.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="logo">
+            <i class="fa-solid fa-trash-can"></i>
+            <a href="index.html">
+                <div class="logo-text">BlueBins</div>
+            </a>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="products.html">Our Bins</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="terms.html">Terms and Conditions</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="js/cart-2.js"></script>
+
+</body>
+
+</html>
